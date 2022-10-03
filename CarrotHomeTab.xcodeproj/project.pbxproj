@@ -18,6 +18,11 @@
 		8630C5FB28E99E87002A2F35 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630C5F928E99E87002A2F35 /* NetworkService.swift */; };
 		8630C5FC28E99E87002A2F35 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630C5FA28E99E87002A2F35 /* Resource.swift */; };
 		8630C5FF28E99E90002A2F35 /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630C5FE28E99E90002A2F35 /* Publisher+Utils.swift */; };
+		86475C7528E9A4B400999ECC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86475C7428E9A4B400999ECC /* HomeViewController.swift */; };
+		86475C7728E9A4D200999ECC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86475C7628E9A4D200999ECC /* DetailViewController.swift */; };
+		86F1558F28EACC4B005B590C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1558E28EACC4B005B590C /* MainTabBarController.swift */; };
+		86F1559128EACF9F005B590C /* MainNavigaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1559028EACF9F005B590C /* MainNavigaionViewController.swift */; };
+		86F1559328EAD2E8005B590C /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F1559228EAD2E8005B590C /* Detail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		8630C5F928E99E87002A2F35 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8630C5FA28E99E87002A2F35 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		8630C5FE28E99E90002A2F35 /* Publisher+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
+		86475C7428E9A4B400999ECC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		86475C7628E9A4D200999ECC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		86F1558E28EACC4B005B590C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		86F1559028EACF9F005B590C /* MainNavigaionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigaionViewController.swift; sourceTree = "<group>"; };
+		86F1559228EAD2E8005B590C /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,11 @@
 				8630C5C228E99D7B002A2F35 /* AppDelegate.swift */,
 				8630C5C428E99D7B002A2F35 /* SceneDelegate.swift */,
 				8630C5C828E99D7B002A2F35 /* Main.storyboard */,
+				86F1559228EAD2E8005B590C /* Detail.storyboard */,
+				86475C7428E9A4B400999ECC /* HomeViewController.swift */,
+				86475C7628E9A4D200999ECC /* DetailViewController.swift */,
+				86F1559028EACF9F005B590C /* MainNavigaionViewController.swift */,
+				86F1558E28EACC4B005B590C /* MainTabBarController.swift */,
 				8630C5FD28E99E90002A2F35 /* Utils */,
 				8630C5F828E99E87002A2F35 /* Network */,
 				8630C5F628E99E3C002A2F35 /* Model */,
@@ -266,6 +281,7 @@
 				8630C5CF28E99D7C002A2F35 /* LaunchScreen.storyboard in Resources */,
 				8630C5CC28E99D7C002A2F35 /* Assets.xcassets in Resources */,
 				8630C5CA28E99D7B002A2F35 /* Main.storyboard in Resources */,
+				86F1559328EAD2E8005B590C /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +306,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F1559128EACF9F005B590C /* MainNavigaionViewController.swift in Sources */,
 				8630C5C328E99D7B002A2F35 /* AppDelegate.swift in Sources */,
 				8630C5FB28E99E87002A2F35 /* NetworkService.swift in Sources */,
+				86F1558F28EACC4B005B590C /* MainTabBarController.swift in Sources */,
 				8630C5FC28E99E87002A2F35 /* Resource.swift in Sources */,
 				8630C5FF28E99E90002A2F35 /* Publisher+Utils.swift in Sources */,
 				8630C5C528E99D7B002A2F35 /* SceneDelegate.swift in Sources */,
+				86475C7528E9A4B400999ECC /* HomeViewController.swift in Sources */,
+				86475C7728E9A4D200999ECC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
