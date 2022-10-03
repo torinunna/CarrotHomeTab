@@ -23,6 +23,9 @@
 		86F1558F28EACC4B005B590C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1558E28EACC4B005B590C /* MainTabBarController.swift */; };
 		86F1559128EACF9F005B590C /* MainNavigaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1559028EACF9F005B590C /* MainNavigaionViewController.swift */; };
 		86F1559328EAD2E8005B590C /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F1559228EAD2E8005B590C /* Detail.storyboard */; };
+		86F1559528EB2FDE005B590C /* MyTownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1559428EB2FDE005B590C /* MyTownViewController.swift */; };
+		86F1559728EB2FE6005B590C /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1559628EB2FE6005B590C /* MyProfileViewController.swift */; };
+		86F1559928EB2FEE005B590C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1559828EB2FEE005B590C /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		86F1558E28EACC4B005B590C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		86F1559028EACF9F005B590C /* MainNavigaionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigaionViewController.swift; sourceTree = "<group>"; };
 		86F1559228EAD2E8005B590C /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		86F1559428EB2FDE005B590C /* MyTownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTownViewController.swift; sourceTree = "<group>"; };
+		86F1559628EB2FE6005B590C /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		86F1559828EB2FEE005B590C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,9 @@
 				86475C7628E9A4D200999ECC /* DetailViewController.swift */,
 				86F1559028EACF9F005B590C /* MainNavigaionViewController.swift */,
 				86F1558E28EACC4B005B590C /* MainTabBarController.swift */,
+				86F1559428EB2FDE005B590C /* MyTownViewController.swift */,
+				86F1559628EB2FE6005B590C /* MyProfileViewController.swift */,
+				86F1559828EB2FEE005B590C /* ChatViewController.swift */,
 				8630C5FD28E99E90002A2F35 /* Utils */,
 				8630C5F828E99E87002A2F35 /* Network */,
 				8630C5F628E99E3C002A2F35 /* Model */,
@@ -310,10 +319,13 @@
 				8630C5C328E99D7B002A2F35 /* AppDelegate.swift in Sources */,
 				8630C5FB28E99E87002A2F35 /* NetworkService.swift in Sources */,
 				86F1558F28EACC4B005B590C /* MainTabBarController.swift in Sources */,
+				86F1559728EB2FE6005B590C /* MyProfileViewController.swift in Sources */,
 				8630C5FC28E99E87002A2F35 /* Resource.swift in Sources */,
 				8630C5FF28E99E90002A2F35 /* Publisher+Utils.swift in Sources */,
 				8630C5C528E99D7B002A2F35 /* SceneDelegate.swift in Sources */,
 				86475C7528E9A4B400999ECC /* HomeViewController.swift in Sources */,
+				86F1559528EB2FDE005B590C /* MyTownViewController.swift in Sources */,
+				86F1559928EB2FEE005B590C /* ChatViewController.swift in Sources */,
 				86475C7728E9A4D200999ECC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
