@@ -28,7 +28,12 @@ extension MainTabBarController: UITabBarControllerDelegate {
         
         switch viewController {
         case is HomeViewController:
-            let titleItem = UIBarButtonItem(title: "한남동", style: .plain, target: nil, action: nil)
+            
+            let titleConfig = CustomBarItemConfiguration(title: "한남동", handler: {})
+            let customTitleView = CustomBarItem(config: titleConfig)
+            let titleItem = UIBarButtonItem(customView: customTitleView)
+            
+//            let titleItem = UIBarButtonItem(title: "한남동", style: .plain, target: nil, action: nil)
             let feedItem = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: nil)
             
             navigationItem.leftBarButtonItem = titleItem
