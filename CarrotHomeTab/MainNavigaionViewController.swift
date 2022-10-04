@@ -12,7 +12,10 @@ class MainNavigaionViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        let backButton = UIImage(systemName: "arrow.backward")
+        navigationBar.backIndicatorImage = backButton
+        navigationBar.backIndicatorTransitionMaskImage = backButton
+        navigationBar.tintColor = .white
     }
     
 }
