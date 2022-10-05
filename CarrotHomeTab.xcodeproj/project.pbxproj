@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8630C5C328E99D7B002A2F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630C5C228E99D7B002A2F35 /* AppDelegate.swift */; };
 		8630C5C528E99D7B002A2F35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630C5C428E99D7B002A2F35 /* SceneDelegate.swift */; };
-		8630C5CA28E99D7B002A2F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8630C5C828E99D7B002A2F35 /* Main.storyboard */; };
 		8630C5CC28E99D7C002A2F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8630C5CB28E99D7C002A2F35 /* Assets.xcassets */; };
 		8630C5CF28E99D7C002A2F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8630C5CD28E99D7C002A2F35 /* LaunchScreen.storyboard */; };
 		8630C5DA28E99D7C002A2F35 /* CarrotHomeTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630C5D928E99D7C002A2F35 /* CarrotHomeTabTests.swift */; };
@@ -28,6 +27,7 @@
 		86F1559528EB2FDE005B590C /* MyTownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1559428EB2FDE005B590C /* MyTownViewController.swift */; };
 		86F1559728EB2FE6005B590C /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1559628EB2FE6005B590C /* MyProfileViewController.swift */; };
 		86F1559928EB2FEE005B590C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F1559828EB2FEE005B590C /* ChatViewController.swift */; };
+		86F7A99428EDC7AE00E6BD56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F7A99328EDC7AE00E6BD56 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		8630C5BF28E99D7B002A2F35 /* CarrotHomeTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotHomeTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8630C5C228E99D7B002A2F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8630C5C428E99D7B002A2F35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8630C5C928E99D7B002A2F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8630C5CB28E99D7C002A2F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8630C5CE28E99D7C002A2F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8630C5D028E99D7C002A2F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		86F1559428EB2FDE005B590C /* MyTownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTownViewController.swift; sourceTree = "<group>"; };
 		86F1559628EB2FE6005B590C /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		86F1559828EB2FEE005B590C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		86F7A99328EDC7AE00E6BD56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,20 +126,16 @@
 			children = (
 				8630C5C228E99D7B002A2F35 /* AppDelegate.swift */,
 				8630C5C428E99D7B002A2F35 /* SceneDelegate.swift */,
-				8630C5C828E99D7B002A2F35 /* Main.storyboard */,
-				86F1559228EAD2E8005B590C /* Detail.storyboard */,
-				86475C7428E9A4B400999ECC /* HomeViewController.swift */,
-				86475C7628E9A4D200999ECC /* DetailViewController.swift */,
-				86F1559028EACF9F005B590C /* MainNavigaionViewController.swift */,
-				86F1558E28EACC4B005B590C /* MainTabBarController.swift */,
-				8646128628EC629B0046D71F /* UIBarButtonItem+CustomView.swift */,
-				8646128428EC0BBD0046D71F /* CustomBarItem.swift */,
-				86F1559428EB2FDE005B590C /* MyTownViewController.swift */,
-				86F1559628EB2FE6005B590C /* MyProfileViewController.swift */,
-				86F1559828EB2FEE005B590C /* ChatViewController.swift */,
+				86F7A99028EDC65B00E6BD56 /* Views */,
+				8630C5F628E99E3C002A2F35 /* Model */,
+				86F7A98A28EDC5B600E6BD56 /* Home */,
+				86F7A98B28EDC5C500E6BD56 /* MyTown */,
+				86F7A98C28EDC5D900E6BD56 /* Chat */,
+				86F7A98D28EDC5E700E6BD56 /* MyProfile */,
+				86F7A98E28EDC5FA00E6BD56 /* Detail */,
+				86F7A98F28EDC63700E6BD56 /* Extensions */,
 				8630C5FD28E99E90002A2F35 /* Utils */,
 				8630C5F828E99E87002A2F35 /* Network */,
-				8630C5F628E99E3C002A2F35 /* Model */,
 				8630C5CB28E99D7C002A2F35 /* Assets.xcassets */,
 				8630C5CD28E99D7C002A2F35 /* LaunchScreen.storyboard */,
 				8630C5D028E99D7C002A2F35 /* Info.plist */,
@@ -187,6 +183,66 @@
 				8630C5FE28E99E90002A2F35 /* Publisher+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		86F7A98A28EDC5B600E6BD56 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				86475C7428E9A4B400999ECC /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		86F7A98B28EDC5C500E6BD56 /* MyTown */ = {
+			isa = PBXGroup;
+			children = (
+				86F1559428EB2FDE005B590C /* MyTownViewController.swift */,
+			);
+			path = MyTown;
+			sourceTree = "<group>";
+		};
+		86F7A98C28EDC5D900E6BD56 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				86F1559828EB2FEE005B590C /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		86F7A98D28EDC5E700E6BD56 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				86F1559628EB2FE6005B590C /* MyProfileViewController.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		86F7A98E28EDC5FA00E6BD56 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				86F1559228EAD2E8005B590C /* Detail.storyboard */,
+				86475C7628E9A4D200999ECC /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		86F7A98F28EDC63700E6BD56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8646128628EC629B0046D71F /* UIBarButtonItem+CustomView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86F7A99028EDC65B00E6BD56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86F7A99328EDC7AE00E6BD56 /* Main.storyboard */,
+				86F1559028EACF9F005B590C /* MainNavigaionViewController.swift */,
+				86F1558E28EACC4B005B590C /* MainTabBarController.swift */,
+				8646128428EC0BBD0046D71F /* CustomBarItem.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,8 +351,8 @@
 			files = (
 				8630C5CF28E99D7C002A2F35 /* LaunchScreen.storyboard in Resources */,
 				8630C5CC28E99D7C002A2F35 /* Assets.xcassets in Resources */,
-				8630C5CA28E99D7B002A2F35 /* Main.storyboard in Resources */,
 				86F1559328EAD2E8005B590C /* Detail.storyboard in Resources */,
+				86F7A99428EDC7AE00E6BD56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,14 +427,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8630C5C828E99D7B002A2F35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8630C5C928E99D7B002A2F35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8630C5CD28E99D7C002A2F35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
