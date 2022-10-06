@@ -119,15 +119,16 @@
         <scene sceneID="kRQ-t5-PuC">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" referencedIdentifier="HomeViewController" id="8mv-qj-7BC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6HJ-Sy-LqR"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="homekit" catalog="system" id="6HJ-Sy-LqR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcp-90-cbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-407.24637681159425" y="841.74107142857144"/>
+            <point key="canvasLocation" x="-488" y="550"/>
         </scene>
     </scenes>
     <resources>
         <image name="doc" catalog="system" width="115" height="128"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="rectangle.3.group.bubble.left" catalog="system" width="128" height="110"/>
