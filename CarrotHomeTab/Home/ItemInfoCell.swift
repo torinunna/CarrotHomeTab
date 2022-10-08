@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ItemInfoCell: UICollectionViewCell {
     
@@ -18,6 +19,13 @@ class ItemInfoCell: UICollectionViewCell {
     @IBOutlet weak var numOfChatsLabel: UILabel!
     @IBOutlet weak var numOfLikesLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        thumbnail.layer.cornerRadius = 10
+        thumbnail.layer.masksToBounds = true
+        thumbnail.tintColor = .systemGray
+    }
+    
     func configure(item: ItemInfo) {
         titleLabel.text = item.title
         descriptionLabel.text = item.location
@@ -25,6 +33,11 @@ class ItemInfoCell: UICollectionViewCell {
         
         numOfChatsLabel.text = "\(item.numOfChats)원"
         numOfLikesLabel.text = "\(item.numOfLikes)"
+        
+        thumbnail.kf.setImage(
+            with: URL(string: item.thumbnailURL)!,
+            placeholder: UIImage(systemName: "hands.sparkle.fill")
+        )
     }
     
     private func formatNumber(_ price: Int) -> String {
