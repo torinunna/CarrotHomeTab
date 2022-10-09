@@ -24,9 +24,15 @@ class DetailViewController: UIViewController {
     var subscriptions = Set<AnyCancellable>()
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
         configureNavigationBar()
         bind()
         viewModel.fetch()
+    }
+    
+    private func setUpUI() {
+        userThumbnail.layer.masksToBounds = true
+        userThumbnail.layer.cornerRadius = 40
     }
     
     private func bind() {
