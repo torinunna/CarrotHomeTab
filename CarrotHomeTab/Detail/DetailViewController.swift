@@ -24,6 +24,7 @@ class DetailViewController: UIViewController {
     var subscriptions = Set<AnyCancellable>()
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureNavigationBar()
         bind()
         viewModel.fetch()
     }
@@ -45,5 +46,25 @@ class DetailViewController: UIViewController {
                 
             }.store(in: &subscriptions)
     }
+    
+    private func configureNavigationBar() {
+    
+        let moreConfig = CustomBarItemConfiguration(
+            image: UIImage(systemName: "ellipsis"),
+            handler: { print("--> more pressed") }
+        )
+        let moreItem = UIBarButtonItem.generate(with: moreConfig, width: 30)
+        
+        let shareConfig = CustomBarItemConfiguration(
+            image: UIImage(systemName: "square.and.arrow.up"),
+            handler: { print("--> share pressed") }
+        )
+        let shareItem = UIBarButtonItem.generate(with: shareConfig, width: 30)
+        
+        navigationItem.rightBarButtonItems = [moreItem, shareItem]
+        navigationItem.backButtonDisplayMode = .minimal
+        
+    }
 
 }
+
