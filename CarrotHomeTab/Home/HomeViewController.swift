@@ -41,6 +41,8 @@ class HomeViewController: UIViewController {
         snapshot.appendSections([.main])
         snapshot.appendItems([], toSection: .main)
         datasource.apply(snapshot)
+        
+        collectionView.delegate = self
     }
     
     private func applyItems(_ items: [ItemInfo]) {
@@ -60,6 +62,7 @@ class HomeViewController: UIViewController {
             .sink { item in
                 let sb = UIStoryboard(name: "Detail", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+                vc.viewModel = DetailViewModel(network: NetworkService(configuration: .default), itemInfo: item)
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscriptions)
     }
@@ -75,4 +78,11 @@ class HomeViewController: UIViewController {
         
     }
     
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = viewModel.items[indexPath.item]
+        viewModel.itemPressed.send(item)
+    }
 }

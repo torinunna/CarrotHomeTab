@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		862D344528F15DEE00C8E4B4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 862D344428F15DEE00C8E4B4 /* Kingfisher */; };
+		862D344728F1A53200C8E4B4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D344628F1A53200C8E4B4 /* DetailViewModel.swift */; };
+		862D344928F1A58300C8E4B4 /* ItemInfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D344828F1A58300C8E4B4 /* ItemInfoDetails.swift */; };
 		8630C5C328E99D7B002A2F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630C5C228E99D7B002A2F35 /* AppDelegate.swift */; };
 		8630C5C528E99D7B002A2F35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8630C5C428E99D7B002A2F35 /* SceneDelegate.swift */; };
 		8630C5CC28E99D7C002A2F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8630C5CB28E99D7C002A2F35 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		862D344628F1A53200C8E4B4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		862D344828F1A58300C8E4B4 /* ItemInfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoDetails.swift; sourceTree = "<group>"; };
 		8630C5BF28E99D7B002A2F35 /* CarrotHomeTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotHomeTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8630C5C228E99D7B002A2F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8630C5C428E99D7B002A2F35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				86F1559228EAD2E8005B590C /* Detail.storyboard */,
+				862D344628F1A53200C8E4B4 /* DetailViewModel.swift */,
+				862D344828F1A58300C8E4B4 /* ItemInfoDetails.swift */,
 				86475C7628E9A4D200999ECC /* DetailViewController.swift */,
 			);
 			path = Detail;
@@ -406,9 +412,11 @@
 				8646128728EC629B0046D71F /* UIBarButtonItem+CustomView.swift in Sources */,
 				8630C5FF28E99E90002A2F35 /* Publisher+Utils.swift in Sources */,
 				8630C5C528E99D7B002A2F35 /* SceneDelegate.swift in Sources */,
+				862D344928F1A58300C8E4B4 /* ItemInfoDetails.swift in Sources */,
 				8646128528EC0BBD0046D71F /* CustomBarItem.swift in Sources */,
 				86DBDE7128EDDB02002F623D /* ViewModel.swift in Sources */,
 				86475C7528E9A4B400999ECC /* HomeViewController.swift in Sources */,
+				862D344728F1A53200C8E4B4 /* DetailViewModel.swift in Sources */,
 				86F1559528EB2FDE005B590C /* MyTownViewController.swift in Sources */,
 				86F1559928EB2FEE005B590C /* ChatViewController.swift in Sources */,
 				866B960728F012050054CE06 /* ItemInfoCell.swift in Sources */,
