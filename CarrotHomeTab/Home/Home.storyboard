@@ -134,11 +134,21 @@
                                                         </view>
                                                     </subviews>
                                                 </stackView>
+                                                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJT-Xc-a9R">
+                                                    <rect key="frame" x="0.0" y="119" width="414.5" height="1"/>
+                                                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Mhs-Zf-n4V"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="g8R-bs-GPd" firstAttribute="top" secondItem="25r-mt-8CH" secondAttribute="top" id="ARI-km-5XB"/>
+                                                <constraint firstItem="PJT-Xc-a9R" firstAttribute="leading" secondItem="25r-mt-8CH" secondAttribute="leading" id="BQx-kx-fV2"/>
                                                 <constraint firstAttribute="bottom" secondItem="g8R-bs-GPd" secondAttribute="bottom" id="RgV-3p-dAM"/>
+                                                <constraint firstAttribute="trailing" secondItem="PJT-Xc-a9R" secondAttribute="trailing" constant="-0.5" id="V5U-ch-kUC"/>
                                                 <constraint firstAttribute="trailing" secondItem="g8R-bs-GPd" secondAttribute="trailing" id="guQ-xE-MQL"/>
+                                                <constraint firstAttribute="bottom" secondItem="PJT-Xc-a9R" secondAttribute="bottom" id="iYG-R4-8fQ"/>
                                                 <constraint firstItem="g8R-bs-GPd" firstAttribute="leading" secondItem="25r-mt-8CH" secondAttribute="leading" id="qsN-NI-ERI"/>
                                             </constraints>
                                         </collectionViewCellContentView>

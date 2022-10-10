@@ -20,6 +20,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var itemTitle: UILabel!
     @IBOutlet weak var itemDescription: UILabel!
     
+    @IBOutlet weak var priceLabel: UILabel!
+    
+    
     var viewModel: DetailViewModel!
     var subscriptions = Set<AnyCancellable>()
     override func viewDidLoad() {
@@ -49,6 +52,7 @@ class DetailViewController: UIViewController {
                 self.itemTitle.text = details.item.title
                 self.itemDescription.text = details.details.descriptions
                 
+                self.priceLabel.text = "\(self.formatNumber(details.item.price))원"
                 
             }.store(in: &subscriptions)
     }
@@ -74,3 +78,11 @@ class DetailViewController: UIViewController {
 
 }
 
+extension DetailViewController {
+    private func formatNumber(_ price: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        let result = formatter.string(from: NSNumber(integerLiteral: price)) ?? ""
+        return result
+    }
+}
